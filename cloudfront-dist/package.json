@@ -1,0 +1,19 @@
+{
+  "name": "hello-cdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-cdk/aws-cloudfront": "^0.8.0",
+    "@aws-cdk/aws-s3": "^0.8.0",
+    "@aws-cdk/cdk": "^0.8.0",
+    "@types/node": "^10.5.5"
+  }
+}
