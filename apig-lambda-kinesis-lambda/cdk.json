@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node bin/apig-lambda-kinesis-lambda.ts"
+}
