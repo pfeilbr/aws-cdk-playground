@@ -8,6 +8,10 @@ API Gateway service integration example
 ## scratch
 
 ```sh
+
+# list stacks in app
+cdk list
+
 # synth stack
 cdk synth ApigSqsLambdaCdkStack
 
@@ -16,6 +20,9 @@ cdk synth ApigSqsLambdaCdkStack | code -
 
 # deploy specific stack
 cdk deploy ApigSqsLambdaCdkStack --force --require-approval never
+
+cdk deploy CloudFrontS3WebsiteCdkStack --force --require-approval never
+
 
 # deploy all stacks that are part of the app
 cdk deploy --all --force --require-approval never
