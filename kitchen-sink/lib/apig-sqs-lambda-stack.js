@@ -1,4 +1,5 @@
 const cdk = require("@aws-cdk/core");
+const { CfnOutput } = require("@aws-cdk/core");
 const iam = require("@aws-cdk/aws-iam");
 const apigateway = require("@aws-cdk/aws-apigateway");
 const lambda = require("@aws-cdk/aws-lambda");
@@ -94,6 +95,22 @@ class ApigSqsLambdaCdkStack extends cdk.Stack {
       }),
       { methodResponses: [{ statusCode: "200" }] }
     );
+
+    new CfnOutput(this, "PutMesageOnSQSQueueURLExample", {
+      value: `https://${api.restApiId}.execute-api.${this.region}.amazonaws.com/prod/queue?message=hello`,
+    });
+
+    new CfnOutput(this, "QueueName", {
+      value: messageQueue.queueName,
+    });
+
+    new CfnOutput(this, "QueueURL", {
+      value: messageQueue.queueUrl,
+    });
+
+    new CfnOutput(this, "QueueARN", {
+      value: messageQueue.queueArn,
+    });
   }
 }
 
