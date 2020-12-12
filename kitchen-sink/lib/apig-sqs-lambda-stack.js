@@ -17,6 +17,9 @@ class ApigSqsLambdaCdkStack extends cdk.Stack {
   constructor(scope, id, props) {
     super(scope, id, props);
 
+    // based on https://sbstjn.com/blog/aws-cdk-api-gateway-service-integration-sqs/
+    // APIG (GET) -> SQS -> lambda
+
     const handler = createInlineNodejsLambda(
       this,
       "MyFn",
@@ -35,8 +38,6 @@ class ApigSqsLambdaCdkStack extends cdk.Stack {
     `
     );
 
-    // https://sbstjn.com/blog/aws-cdk-api-gateway-service-integration-sqs/
-    // APIG (GET) -> SQS -> lambda
     const api = new apigateway.RestApi(this, "my-api", {
       restApiName: "My Service",
       description: "This service serves.",

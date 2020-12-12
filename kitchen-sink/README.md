@@ -11,6 +11,9 @@ API Gateway service integration example
 # synth stack
 cdk synth ApigSqsLambdaCdkStack
 
+# synth stack and send cfn output to vscode to view
+cdk synth ApigSqsLambdaCdkStack | code -
+
 # deploy specific stack
 cdk deploy ApigSqsLambdaCdkStack --force --require-approval never
 
@@ -19,6 +22,8 @@ cdk deploy --all --force --require-approval never
 
 # add message to SQS queue
 curl https://42ssa6ovnl.execute-api.us-east-1.amazonaws.com/prod/queue?message=hello
+
+cdk destroy
 ```
 
 
