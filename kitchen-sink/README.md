@@ -32,9 +32,9 @@ cdk deploy AppSyncLambdaCdkStack --force --require-approval never
 
 # fetch all notes via graphql endpoint
 curl --request POST --header "x-api-key: da2-yww7727445c63gkhjihcua2ioa" \
---header "Content-Type: application/graphql"  \
---data '{"query": "query MyQuery { notes }"}' \
-https://vrs44qbp3fenfh4iq3dtvli7li.appsync-api.us-east-1.amazonaws.com/graphql
+    --header "Content-Type: application/graphql"  \
+    --data '{"query": "query MyQuery { notes }"}' \
+    https://vrs44qbp3fenfh4iq3dtvli7li.appsync-api.us-east-1.amazonaws.com/graphql
 
 # output: {"data":{"notes":["note1","note2","note3"]}}
 

@@ -19,6 +19,10 @@
     "@aws-cdk/aws-appsync": "^1.78.0",
     "@aws-cdk/aws-cloudfront": "^1.78.0",
     "@aws-cdk/aws-cloudfront-origins": "^1.78.0",
+    "@aws-cdk/aws-codepipeline": "^1.78.0",
+    "@aws-cdk/aws-codepipeline-actions": "^1.78.0",
+    "@aws-cdk/aws-events": "^1.78.0",
+    "@aws-cdk/aws-events-targets": "^1.78.0",
     "@aws-cdk/aws-iam": "^1.78.0",
     "@aws-cdk/aws-lambda": "^1.77.0",
     "@aws-cdk/aws-lambda-event-sources": "^1.78.0",
@@ -26,6 +30,8 @@
     "@aws-cdk/aws-s3-deployment": "^1.78.0",
     "@aws-cdk/aws-secretsmanager": "^1.77.0",
     "@aws-cdk/aws-sqs": "^1.78.0",
+    "@aws-cdk/aws-stepfunctions": "^1.78.0",
+    "@aws-cdk/aws-stepfunctions-tasks": "^1.78.0",
     "@aws-cdk/core": "1.77.0"
   }
 }
