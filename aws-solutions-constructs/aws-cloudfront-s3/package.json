@@ -1,0 +1,21 @@
+{
+  "name": "aws-cloudfront-s3",
+  "version": "0.1.0",
+  "bin": {
+    "aws-cloudfront-s3": "bin/aws-cloudfront-s3.js"
+  },
+  "scripts": {
+    "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
+    "cdk": "cdk",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.96.0",
+    "aws-cdk": "1.96.0",
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.96.0",
+    "@aws-solutions-constructs/aws-cloudfront-s3": "^1.96.0"
+  }
+}
