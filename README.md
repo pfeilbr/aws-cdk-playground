@@ -3,9 +3,6 @@
 learn [AWS Cloud Development Kit (CDK)](https://docs.aws.amazon.com/cdk/latest/guide/home.html)
 
 see [`kitchen-sink/README.md`](kitchen-sink/README.md)
-
-other directories are copied AWS examples
-
 ## Description
 
 * express resources using general purpose programming languages (ts/js/python/java/C#)
