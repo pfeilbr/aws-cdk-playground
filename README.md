@@ -73,6 +73,8 @@ cdk destroy [STACKS..]
 Details on the inner workings of CDK.
 ### CDK Tree
 
+Core of CDK is based on tree structure similar to the DOM.
+
 * `node: ConstructNode` - accessed via `this.node` - root of the tree.
 * `node.children`
 * `node.findChild(id: string)` - search for child in tree with `id`.  `new s3.Bucket(this, "Assets")`.  `"Assets"` is the `id`.
@@ -91,6 +93,7 @@ Details on the inner workings of CDK.
 
 * every resource defined in CDK tree has a path
 * `this.node.path` - concatenation of path traversal to the node in the CDK tree. (e.g. `MyStack/Assets`)
+* this path is added to the `Metadata` property for each resource in cfn.
 
 ### CDK Identifiers
 
